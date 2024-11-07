@@ -1,0 +1,998 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(2, 2, 2, 0.932);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: crimson;
+  color: black;
+}
+
+.text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+
+.pekan {
+  color: white;
+  filter: drop-shadow(0 0px 1px rgb(65, 64, 64));
+  padding-left: 83px;
+}
+
+.pekan-img {
+  color: crimson;
+  padding-bottom: 100px;
+  filter: drop-shadow(0 1px 10px crimson);
+  user-select: none;
+  position: relative;
+  top: 50px;
+}
+
+.jam {
+  color: black;
+  filter: drop-shadow(0 0px 1px white);
+}
+
+h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+h3::before {
+  content: "- ";
+  color: white;
+}
+
+h3 p {
+  padding-left: 100px;
+}
+
+p {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.singkatan {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 83px;
+}
+
+label:has(+ input[required])::before {
+  content: "*";
+  color: red;
+}
+
+.container-card-1 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-1 {
+  background-color: rgb(26, 26, 26);
+  width: 420px;
+  color: crimson;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  border-radius: 24px;
+  padding: 30px 40px;
+}
+
+.card-1 p {
+  color: crimson;
+}
+
+.card-1 h1 {
+  color: crimson;
+  text-align: center;
+  user-select: none;
+}
+
+.card-1 .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid crimson;
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+  color: crimson;
+}
+
+.input-box input:active {
+  border: 2px solid crimson;
+  transition: 0.2s ease, transform 0.2s ease;
+}
+
+.input-box input:focus {
+  border: 2px solid crimson;
+  transition: 0.2s ease, transform 0.2s ease;
+}
+
+.input-box box-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.card-1 .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: crimson;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: crimson;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  color: white;
+}
+
+.btn-login {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background-color: rgb(26, 26, 26);
+  color: crimson;
+  border: none;
+  outline: none;
+  border: 1px solid crimson;
+  border-radius: 40px;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: crimson;
+  font-weight: 600;
+}
+
+.btn-login:hover {
+  background-color: crimson;
+  color: rgb(26, 26, 26);
+}
+
+.card-1 .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: crimson;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.container-card-2 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-2 {
+  background-color: rgb(26, 26, 26);
+  width: 420px;
+  color: crimson;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  border-radius: 24px;
+  padding: 30px 40px;
+}
+
+.card-2 p {
+  color: crimson;
+}
+
+.card-2 h1 {
+  color: crimson;
+  text-align: center;
+  user-select: none;
+}
+
+.card-2 .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative;
+}
+
+/* .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid crimson;
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+  color: crimson;
+}
+
+.input-box input:active {
+  border: 2px solid crimson;
+}
+
+.input-box input:focus {
+  border: 2px solid crimson;
+}
+
+.input-box box-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+} */
+
+.btn-register {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background-color: rgb(26, 26, 26);
+  color: crimson;
+  border: none;
+  outline: none;
+  border: 1px solid crimson;
+  border-radius: 40px;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: crimson;
+  font-weight: 600;
+}
+
+.btn-register:hover {
+  background-color: crimson;
+  color: rgb(26, 26, 26);
+}
+
+.card-2 .login-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.login-link p a {
+  color: crimson;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link p a:hover {
+  text-decoration: underline;
+}
+
+div.image {
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.image img {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.nginap {
+  overflow: auto;
+  scroll-behavior: smooth;
+  background-color: rgb(15, 15, 15);
+  border: 2px solid crimson;
+}
+
+.candi {
+  overflow: auto;
+  scroll-behavior: smooth;
+  background-color: rgb(15, 15, 15);
+  border: 2px solid crimson;
+}
+
+.mainkh {
+  overflow: auto;
+  scroll-behavior: smooth;
+  background-color: rgb(15, 15, 15);
+  border: 2px solid crimson;
+  box-shadow: 0 2px 5px rgb(88, 93, 97);
+}
+
+.text-img {
+  color: crimson;
+  text-align: center;
+  user-select: none;
+}
+
+.btn-img {
+  background-color: rgb(15, 15, 15);
+  border: 2px solid crimson;
+  border-radius: 32px;
+  font-family: 'intern', sans-serif;
+}
+
+.btn-img:hover {
+  background-color: rgb(28, 28, 29);
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(15, 15, 15);
+}
+
+.candi::-webkit-scrollbar {
+  height: 6px;
+  width: 8px;
+}
+
+.candi::-webkit-scrollbar-thumb {
+  background-color: crimson;
+}
+
+.nginap::-webkit-scrollbar {
+  height: 6px;
+  width: 8px;
+}
+
+.nginap::-webkit-scrollbar-thumb {
+  background-color: crimson;
+}
+
+.mainkh::-webkit-scrollbar {
+  height: 6px;
+  width: 8px;
+}
+
+.mainkh::-webkit-scrollbar-thumb {
+  background-color: crimson;
+}
+
+.btn-back {
+  padding: 0;
+  color: crimson;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.8rem;
+  border: 1px solid crimson;
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+  position: relative;
+  top: 10px;
+  padding-right: 5px;
+  background-color: rgb(28, 28, 29);
+  cursor: pointer;
+}
+
+
+.btn-back:active {
+  outline: 1px solid crimson;
+  box-shadow: 0 0 10px crimson;
+}
+
+.btn-back:focus {
+  outline: 1px solid crimson;
+}
+
+.image1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  top: 12vh;
+}
+
+.pekan24 {
+  border-radius: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.text-pekan {
+  color: white;
+}
+
+.container-pekan {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  top: 15vh;
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(28, 28, 29);
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  color: crimson;
+}
+
+nav>ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+ul>li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-weight: 600;
+}
+
+nav>.logo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 3px;
+  user-select: none;
+}
+
+nav>ul>li>a {
+  color: crimson;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+nav>ul>li>a:hover {
+  transition: all 0.2s ease-out;
+  color: white;
+  font-weight: 600;
+}
+
+.inp-checkbox:focus {
+  outline: 1px solid crimson;
+}
+
+.inp-checkbox {
+  padding: 8px;
+  border: none;
+  background-color: rgb(28, 28, 29);
+  color: crimson;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  background-color: rgb(28, 28, 29);
+  position: relative;
+}
+
+.menu-toggle>input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -5px;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu-toggle>span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: crimson;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  background-color: crimson;
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+  background-color: crimson;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+/* responsive breakpoint */
+
+
+/* TODO: size untuk windows */
+@media screen and (max-width: 1424px) {
+  .hamburger-menu ion-icon {
+    display: none;
+  }
+}
+
+/* TODO: size untuk tablet */
+@media screen and (max-width: 768px) {
+  nav>ul {
+    width: 50%;
+  }
+
+  .hamburger-menu ion-icon {
+    display: none;
+  }
+}
+
+/* TODO: size untuk mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav>ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(28, 28, 29);
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+
+  .nav-page>.ul-page {
+    position: relative;
+    top: 10px;
+    padding-top: 20px;
+    background: transparent;
+    z-index: 5;
+    transition: none;
+    transform: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  .nav-page>.ul-page.bg-home {
+    transform: none;
+  }
+
+  nav>ul.no-scroll {
+    transform: translateX(0);
+  }
+
+  .hamburger-menu ion-icon {
+    font-size: larger;
+    position: relative;
+    display: inline-flex;
+    top: 3px;
+  }
+
+}
+
+.hamburger-menu {
+  position: relative;
+  z-index: 100;
+}
+
+.text-page-1 {
+  position: relative;
+  top: 20px;
+}
+
+.home {
+  text-align: center;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  display: grid;
+}
+
+/* .searching {
+  height: 8vh;
+  width: 85vw;
+  border-radius: 22px;
+  outline: 1px solid crimson;
+  margin-top: 4.7vh;
+  position: relative;
+  cursor: text;
+  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px;
+  border: none;
+  background-color: rgb(28, 28, 29);
+  color: crimson;
+}
+
+/* TODO: size untuk windows */
+@media screen and (max-width: 1424px) {
+  .home {
+    position: relative;
+    top: 7vh;
+    font-size: 3rem;
+  }
+
+  .p-home {
+    position: relative;
+    top: 3.3vh;
+    font-size: 1.4rem;
+  }
+
+  .searching {
+    width: 65vw;
+  }
+
+  .btn-search {
+    position: relative;
+    left: 62vw;
+  }
+}
+
+/* TODO: size untuk tablet */
+@media screen and (max-width: 768px) {
+  .home {
+    position: relative;
+    top: 12vh;
+    font-size: 2.4rem;
+  }
+
+  .p-home {
+    position: relative;
+    top: 10vh;
+    font-size: 1.1rem;
+  }
+
+  .searching {
+    width: 85vw;
+  }
+
+  .btn-search {
+    position: relative;
+    left: 78vw;
+  }
+}
+
+/* TODO: size untuk android */
+@media screen and (max-width: 576px) {
+  .home {
+    position: relative;
+    top: 12vh;
+    font-size: 2rem;
+  }
+
+  .p-home {
+    font-size: 1rem;
+    position: relative;
+    top:10vh;
+  }
+
+  .searching {
+    width: 85vw;
+  }
+  
+  .btn-search {
+    position: relative;
+    left: 77vw;
+  }
+}
+
+.h1-home {
+  background-image: linear-gradient(to right, crimson, #A52A2A, #97233F, #E23D28);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 40%;
+  background-clip: text;
+  transform-origin: right;
+  animation: animate 10s linear infinite;
+  user-select: none;
+}
+
+.p-home {
+  background-image: linear-gradient(to right, crimson, #A52A2A, #97233F, #E23D28);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  background-clip: text;
+  transform-origin: right;
+  animation: animate 10s linear infinite;
+  user-select: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes animate {
+  to {
+    background-position: 400%;
+  }
+}
+
+.bg-home {
+  overflow-x: hidden;
+}
+
+.search {
+  position: relative;
+  top: 15vh;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.searching {
+  height: 8vh;
+  border-radius: 22px;
+  outline: 1px solid crimson;
+  margin-top: 4.7vh;
+  position: relative;
+  cursor: text;
+  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px;
+  border: none;
+  background-color: rgb(28, 28, 29);
+  color: crimson;
+  padding: 20px 60px 20px 20px;
+
+}
+
+.searching:active {
+  box-shadow: 0 0 10px crimson;
+  transition: all 0.2s ease-out;
+}
+
+.searching:focus {
+  box-shadow: 0 0 10px crimson;
+}
+
+.btn-search {
+  color: crimson;
+  background-color: transparent;
+  font-size: 1.6rem;
+  display: flex;
+  border: none;
+  top: 65px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 8px;
+  background-color: rgb(15, 15, 15);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 28, 29);
+}
+
+.nav-page .ul-page {
+  position: relative;
+  z-index: 5;
+  top: 15vh;
+  font-size: 1.1rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav-page {
+  background: transparent;
+}
+
+.logo-whatsapp {
+  color: crimson;
+  background-color: rgb(28, 28, 29);
+  border: solid crimson 3px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 45px;
+  position: relative;
+  top: 10px;
+}
+
+.num-whatsapp {
+  text-decoration: none;
+  color: crimson;
+}
+
+.btn-wa {
+  background-color: transparent;
+  border: none;
+  filter: drop-shadow(3px 3px 0px crimson);
+}
+
+.btn-wa:hover {
+  filter: drop-shadow(0 0 0);
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.num-whatsapp:focus {
+  background-color: crimson;
+  color: rgb(28, 28, 29);
+}
+
+.whatsapp {
+  padding-top: 10vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-contact h1 {
+  color: crimson;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  display: grid;
+  user-select: none;
+  padding: 1rem;
+}
+
+.contact-user {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+}
+
+.spacing-contact {
+  background-color: rgb(26, 26, 26);
+  padding: 1rem;
+  /* border: 2px solid crimson */
+  /* box-shadow: 0 0 30px crimson; */
+  border-radius: 40px;
+  padding: 20px 40px;
+  padding-bottom: 40px;
+}
+
+.spacing-contact label {
+  filter: drop-shadow(0 0 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: crimson;
+  display: flex;
+}
+
+.spacing-contact input {
+  background-color: rgb(28, 28, 29);
+  border: none;
+  padding: 8px;
+  padding-right: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+  border: 1px solid crimson;
+  color: crimson;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  padding: 20px 40px 20px 20px;
+  width: 100%;
+  fill: rgb(26, 26, 26);
+}
+
+.spacing-contact input:focus {
+  outline: crimson 1px solid;
+}
+
+.spacing-contact textarea {
+  background-color: rgb(28, 28, 29);
+  border: none;
+  outline: none;
+  padding-right: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: crimson;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border: 1px solid crimson;
+  border-radius: 40px;
+  padding: 20px 40px 20px 20px;
+  width: 100%;
+}
+
+.spacing-contact textarea:focus {
+  outline: 1px solid crimson;
+}
+
+.btn-contact {
+  background-color: rgb(26, 26, 26);
+  border: none;
+  color: crimson;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: large;
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid crimson;
+  border-radius: 40px;
+}
+
+.btn-contact:active {
+  background-color: crimson;
+  color: rgb(28, 28, 29);
+  box-shadow: 0 0 10px crimson;
+}
+
+.btn-contact:focus {
+  background-color: crimson;
+  color: rgb(28, 28, 29);
+}
+
+.btn-contact:hover {
+  background-color: crimson;
+  color: rgb(28, 28, 29);
+  box-shadow: 0 0 10px crimson;
+}
+
+.spacing-contact form {
+  gap: 20px;
+  width: 60vw;
+  flex-direction: column;
+  display: flex;
+}
+
+.spacing-contact form box-icon {
+  position: relative;
+  right: 4px;
+  bottom: 50px;
+  left: 53vw;
+}

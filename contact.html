@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "WHC4jmpo7QE_Yg63g",
+          });
+      })();
+    </script>
+
+    <title>Contact Admin</title>
+  </head>
+  <body class="no-scroll">
+    <div class="hamburger-menu">
+      <nav>
+        <div class="logo">
+          <h1 class="logo">Pekan 24 Jam</h1>
+        </div>
+        <ul>
+          <li><a href="../coding/about.html"><span class="icon"><ion-icon name="information"></ion-icon></span> About</a></li>
+          <li><a href="../coding/home.html"><span class="icon"><ion-icon name="home"></ion-icon></span> Home</a></li>
+          <li><a href="../coding/contact.html"><span class="icon"><ion-icon name="send"></ion-icon></span> Contact</a></li>
+          <li><a href="../coding/sign-up.html"><span class="icon"><ion-icon name="person-add"></ion-icon></span> Sign-up</a></li>
+          <li><a href="../coding/login.html"><span class="icon"><ion-icon name="log-in"></ion-icon></span> Login</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <input class="inp-checkbox" type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+    <div class="whatsapp">
+      <button class="btn-wa"><a class="num-whatsapp" href="https://wa.me/+6285643180878"><ion-icon class="logo-whatsapp" name="logo-whatsapp"></ion-icon></a></button>
+    </div>
+    <div class="container-contact">
+        <h1>Contact Me</h1>
+        <div class="contact-user">
+            <div class="spacing-contact">
+                <form action="">
+                  <h1>Contact Me</h1>
+                    <div class="input-box">
+                        <!-- <label for="name">Username</label> -->
+                        <input type="text" id="name" placeholder="Username">
+                        <box-icon type='solid' name='user' color="crimson"></box-icon>
+                    </div>
+                    <div class="input-boxt">
+                        <!-- <label for="email">Email</label> -->
+                        <input type="email" id="email" placeholder="Email">
+                        <box-icon type='solid' name='envelope' color="crimson"></box-icon>
+                    </div>
+                    <div class="input-box">
+                        <!-- <label for="message">Message</label> -->
+                        <textarea id="message" rows="3" class="inp-contact" placeholder="Message"></textarea>
+                        <box-icon type='solid' name='message' color="crimson"></box-icon>
+                    </div>
+                    <button class="btn-contact" onclick="SendMail()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- javascript --> 
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
